@@ -1,8 +1,8 @@
-# Sydney xaringan
+# Fábrica de Datos Laborales xaringan
 
-University of Sydney theme for xaringan (remark.js)
+Fábrica de Datos Laborales Theme theme for xaringan (remark.js)
 
-Example and guide here: http://garthtarr.github.io/sydney_xaringan
+Example and guide here: http://fabrica-datos-laborales.github.io/fdl_xaringan
 
 To get started you will likely need:
 
