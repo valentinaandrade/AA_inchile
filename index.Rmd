@@ -1,8 +1,8 @@
 ---
-title: "Xaringan"
-subtitle: "A theme for the University of Sydney"
-author: "Garth Tarr"
-date: "5 November 2018"
+title: "Example"
+subtitle: "A theme for FONDECYT N°11190229 'Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada'"
+author: "Valentina Andrade"
+date: "format(Sys.Date(), '%d %B,%Y')"
 output:
   xaringan::moon_reader:
     css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
@@ -43,6 +43,9 @@ The **xaringan** package is on CRAN, but I recommend installing the development 
 
 ```{r, eval = FALSE}
 devtools::install_github('yihui/xaringan')
+remotes::install_github("rstudio/chromote")
+install.packages(c("progress", "jsonlite", "pdftools", "digest"))
+source("https://git.io/xaringan2pdf")
 ```
 
 .pull-left[
@@ -1102,3 +1105,9 @@ background-position: 5% 95%
 <br><br><br>
 
 ]]
+
+
+```{r eval = F, echo = F}
+xaringan_to_pdf("https://fabrica-datos-laborales.github.io/fdl_xaringan/#1")
+```
+
