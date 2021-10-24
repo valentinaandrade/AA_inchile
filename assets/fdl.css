@@ -67,14 +67,14 @@ To specify the margin of the first title h1
   display: none;
 }
 /* background colour classes */
-.sydney-blue {
+.fdl-blue {
   background-color: #0148A4;
   color: white;
 }
-.sydney-yellow {
+.fdl-yellow {
   background-color: #FFB800;
 }
-.sydney-red {
+.fdl-red {
   background-color: #e64626;
   color: white;
 }
@@ -312,8 +312,8 @@ slides > slide {
 
 @page { margin: 0; }
 @media print {
-  .inverse, .segue, .segue-yellow, .segue-red, .sydney-blue,
-  .sydney-yellow, .sydney-red {
+  .inverse, .segue, .segue-yellow, .segue-red, .fdl-blue,
+  .fdl-yellow, .fdl-red {
     background-color: transparent;
     color: black;
     text-shadow: none;
@@ -345,7 +345,7 @@ slides > slide {
 /* Add image and change bg color
 .title-slide {
   background-image: url(USydLogo-black.svg), url("title-image.jpg");
-  /* background-image: url(https://sydney.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
+  /* background-image: url(https://fdl.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
   /*
   background-position: 10% 90%, 100% 50%;
   background-size: 160px, 50% 100%;
@@ -356,11 +356,11 @@ slides > slide {
 */
  
 .title-slide {
-  background-image: url(USydLogo-black.svg);
-  /* background-image: url(https://sydney.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
-  background-position: 10% 90%;
-  background-size: 160px;
-  background-color: #e64626;
+  background-image: url(logo/logo-blanco.png);
+  /* background-image: url(https://fdl.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
+  background-position: 100% 100%;
+  background-size: 200px;
+  background-color:  #eb242c;
   text-align:left;
   vertical-align: top;
   text-shadow: none;
