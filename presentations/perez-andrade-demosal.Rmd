@@ -1,8 +1,8 @@
 ---
-title: "Presentación"
-subtitle: ".tiny[FONDECYT N°11190229 'Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada']"
-author: "Valentina Andrade"
-date: "`r format(Sys.Date(), '%d %B,%Y')`"
+title: '"Las clases sociales en tiempos de movilización social: Identidad de clases y revitalización sindical en Chile (1999-2019)"'
+subtitle: ".small[Ponencia Seminario Internacional Desigualdad y Movilidad Social en América Latina (DEMOSAL)]<br>"
+author: "Pablo Pérez y Valentina Andrade <br>.tiny[FONDECYT N°11190229 'Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada']"
+date: ".tiny[`r format(Sys.Date(), '%d %B, %Y')`]"
 output:
   xaringan::moon_reader:
     css: ["default", "assets/fdl-fonts.css", "assets/fdl.css"]
@@ -40,32 +40,11 @@ top_icon = function(x) {
 }
 ```
 
-## Installing `r top_icon("download")`
+## Abstract 
 
-The **xaringan** package is on CRAN, but I recommend installing the development release from `r icons::fontawesome("github")`
+<br>
 
-```{r, eval = FALSE}
-devtools::install_github('yihui/xaringan')
-remotes::install_github("rstudio/chromote")
-install.packages(c("progress", "jsonlite", "pdftools", "digest"))
-source("https://git.io/xaringan2pdf")
-```
-
-.pull-left[
-You will also need two other CSS files for the custom University of Sydney styling:
-
-- `fdl-fonts.css`
-- `sydney.css`
-]
-.pull-right[
-If you want the University Logo to show up on the title slide, you'll also need
-
-- `USydLogo-black.svg`
-]
-
-These are available in the assets folder of the GitHub code repository [`r icons::fontawesome("github")` `garthtarr/sydney_xaringan`](http://github.com/garthtarr/sydney_xaringan/assets)
-
-To make things easy to get started, I recommend downloading a copy of the `sydney_xaringan` repo [`r icons::fontawesome("file-archive")`](https://github.com/garthtarr/sydney_xaringan/archive/master.zip) and make changes to the template. 
+- En la última década, Chile ha sido testigo de un renacer de la movilización social y sindical. En esta investigación identificamos los efectos de estos fenómenos analizando su influencia sobre la identidad de clase trabajadora. Utilizando la encuesta ISSP (años 1999, 2009 y 2019), examinamos cómo la posición de clase y la afiliación sindical afecta la identificación con la clase trabajadora. Junto con esto, estudiamos si dicha identificación ha incrementado en el tiempo, así como si la influencia de la posición de clase y la afiliación sindical se ha reforzado en la última década. Nuestros hallazgos sugieren que quienes pertenecen a la clase trabajadora tienen mayores probabilidades de identificarse con dicha clase. Sin embargo, contrario nuestras hipótesis, los análisis no indican que la identidad de clase trabajadora se refuerce como resultado de la afiliación sindical, ni que ella haya aumentado significativamente en la última década. 
 
 ---
 background-image: url("assets/logo/logo.png")
@@ -558,23 +537,31 @@ background-position: 100% 0%
 
 .pull-right[.pull-down[
 
-<a href="mailto:valentinaandrade@uchile.cl">
-.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` valentinaandrade@uchile.cl]
+.white[**Pablo Pérez Ahumada** - Investigador principal]
+<a href="mailto:pperez@uahurtado.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` pperez@uahurtado.cl]
 </a>
 
 <a href="https://fabricadedatoslaborales.cl/">
 .white[`r icons::icon_style(icons::fontawesome("link"), fill = "white")` https://fabricadedatoslaborales.cl]
 </a>
 
+<a href="http://github.com/fabrica-datos-laborales">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @fabrica-datos-laborales]
+</a>
+
+<br>
+.white[**Valentina Andrade** - Asistente de investigación]
+<a href="mailto:valentinaandrade@uchile.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` valentinaandrade@uchile.cl]
+</a>
+
+
 <a href="https://github.com/valentinaandrade">
 .white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @valentinaandrade]
 </a>
 
-  <a href="http://github.com/fabrica-datos-laborales">
-  .white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @fabrica-datos-laborales]
-  </a>
-
-<br><br><br>
+<br><br>
 
 ]]
 
