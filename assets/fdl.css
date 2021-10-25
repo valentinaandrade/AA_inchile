@@ -71,8 +71,8 @@ To specify the margin of the first title h1
   background-color: #0148A4;
   color: white;
 }
-.fdl-yellow {
-  background-color: #FFB800;
+.fdl-black {
+  background-color: #000000;
 }
 .fdl-red {
   background-color: #e64626;
@@ -101,14 +101,14 @@ To specify the margin of the first title h1
   display: none;
 }
 
-.segue-yellow {
+.segue-#000000 {
   text-align:center;
   vertical-align: middle;
-  background-color: #FFB800;
+  background-color: #000000;
   color: #424242;
   text-shadow: 0 0 2px #333;
 }
-.segue-yellow .remark-slide-number {
+.segue-black .remark-slide-number {
   display: none;
 }
 
@@ -312,8 +312,8 @@ slides > slide {
 
 @page { margin: 0; }
 @media print {
-  .inverse, .segue, .segue-yellow, .segue-red, .fdl-blue,
-  .fdl-yellow, .fdl-red {
+  .inverse, .segue, .segue-black, .segue-red, .fdl-blue,
+  .fdl-black, .fdl-red {
     background-color: transparent;
     color: black;
     text-shadow: none;

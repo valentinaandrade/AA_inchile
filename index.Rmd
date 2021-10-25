@@ -428,39 +428,6 @@ By default remark.js disables browser based zooming. I've found and modified a h
 
 
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-## Background images
-
-.pull-left[
-
-- We can place images anywhere on the screen by using `background-image` in conjunction with <br>`background-position`
-- The image, size and position are defined immediately after the `---` that starts a new slide.
-
-
-Assuming `image.jpg` is in the same folder as your `.Rmd` file, the code is:
-
-```
----
-background-image: url("image.jpg")
-background-position: 100% 50%
-background-size: 50% 75%
-
-## Background images
-
-.pull-left[
-
-... Left column text here ...
-
-]
-
-```
-
-]
-
----
 class: center, middle
 background-image: url("assets/logo/logo.png")
 background-size: 15%
@@ -582,32 +549,34 @@ If you have a long list of references, and want to split them over multiple slid
 
 
 ---
-class: fdl-blue
+class: fdl-black
 background-image: url("assets/logo/logo-blanco.png")
 background-size: 15%
 background-position: 100% 0%
 
-# Thanks!
+# ¡Gracias!
 
 .pull-right[.pull-down[
 
 <a href="mailto:valentinaandrade@uchile.cl">
-.white[`r icons::fontawesome("paper-plane")` valentinaandrade@uchile.cl]
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` valentinaandrade@uchile.cl]
 </a>
 
-<a href="http://garthtarr.github.io/sydney_xaringan">
-.white[`r icons::fontawesome("link")` garthtarr.github.io/sydney_xaringan]
+<a href="https://fabricadedatoslaborales.cl/">
+.white[`r icons::icon_style(icons::fontawesome("link"), fill = "white")` https://fabricadedatoslaborales.cl]
 </a>
 
-<a href="http://twitter.com/valentinaandrade">
-.white[`r icons::fontawesome("twitter")` @valentinandrade]
+<a href="https://github.com/valentinaandrade">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @valentinaandrade]
 </a>
 
-<a href="http://github.com/fabrica-datos-laborales">
-.white[`r icons::fontawesome("github")` @fabrica-datos-laborales]
-</a>
+  <a href="http://github.com/fabrica-datos-laborales">
+  .white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @fabrica-datos-laborales]
+  </a>
 
 <br><br><br>
 
 ]]
 
+.pull-left.white.middle[
+FONDECYT N°11190229<br>*Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada*]
