@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentación</title>
+    <title>Politicas de Inclusión en Educación Superior en Chile</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Valentina Andrade" />
-    <script src="index_files/header-attrs-2.7/header-attrs.js"></script>
+    <meta name="author" content="Research Assistant: Valentina Andrade" />
+    <script src="index_files/header-attrs-2.16/header-attrs.js"></script>
     <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <script src="index_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
     <script src="index_files/jquery-3.5.1/jquery.min.js"></script>
@@ -41,10 +41,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Presentación
-## .tiny[FONDECYT N°11190229 ‘Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada’]
-### Valentina Andrade
-### 25 octubre,2021
+# Politicas de Inclusión en Educación Superior en Chile
+## Beca de Excelencia Académica y Programa de Acceso Educación Superior
+### Research Assistant: Valentina Andrade
+### 02 septiembre,2022
 
 ---
 
@@ -280,62 +280,23 @@ step(lm(Fertility~.,data = swiss))
 ## Fertility ~ Agriculture + Examination + Education + Catholic + 
 ##     Infant.Mortality
 ## 
-##                    Df
-## - Examination       1
-## &lt;none&gt;               
-## - Agriculture       1
-## - Infant.Mortality  1
-## - Catholic          1
-## - Education         1
-##                    Sum of Sq
-## - Examination          53.03
-## &lt;none&gt;                      
-## - Agriculture         307.72
-## - Infant.Mortality    408.75
-## - Catholic            447.71
-## - Education          1162.56
-##                       RSS
-## - Examination      2158.1
-## &lt;none&gt;             2105.0
-## - Agriculture      2412.8
-## - Infant.Mortality 2513.8
-## - Catholic         2552.8
-## - Education        3267.6
-##                       AIC
-## - Examination      189.86
-## &lt;none&gt;             190.69
-## - Agriculture      195.10
-## - Infant.Mortality 197.03
-## - Catholic         197.75
-## - Education        209.36
+##                    Df Sum of Sq    RSS    AIC
+## - Examination       1     53.03 2158.1 189.86
+## &lt;none&gt;                          2105.0 190.69
+## - Agriculture       1    307.72 2412.8 195.10
+## - Infant.Mortality  1    408.75 2513.8 197.03
+## - Catholic          1    447.71 2552.8 197.75
+## - Education         1   1162.56 3267.6 209.36
 ## 
 ## Step:  AIC=189.86
 ## Fertility ~ Agriculture + Education + Catholic + Infant.Mortality
 ## 
-##                    Df
-## &lt;none&gt;               
-## - Agriculture       1
-## - Infant.Mortality  1
-## - Catholic          1
-## - Education         1
-##                    Sum of Sq
-## &lt;none&gt;                      
-## - Agriculture         264.18
-## - Infant.Mortality    409.81
-## - Catholic            956.57
-## - Education          2249.97
-##                       RSS
-## &lt;none&gt;             2158.1
-## - Agriculture      2422.2
-## - Infant.Mortality 2567.9
-## - Catholic         3114.6
-## - Education        4408.0
-##                       AIC
-## &lt;none&gt;             189.86
-## - Agriculture      193.29
-## - Infant.Mortality 196.03
-## - Catholic         205.10
-## - Education        221.43
+##                    Df Sum of Sq    RSS    AIC
+## &lt;none&gt;                          2158.1 189.86
+## - Agriculture       1    264.18 2422.2 193.29
+## - Infant.Mortality  1    409.81 2567.9 196.03
+## - Catholic          1    956.57 3114.6 205.10
+## - Education         1   2249.97 4408.0 221.43
 ```
 
 ```
@@ -345,14 +306,8 @@ step(lm(Fertility~.,data = swiss))
 ##     Infant.Mortality, data = swiss)
 ## 
 ## Coefficients:
-##      (Intercept)  
-##          62.1013  
-##      Agriculture  
-##          -0.1546  
-##        Education  
-##          -0.9803  
-##         Catholic  
-##           0.1247  
+##      (Intercept)       Agriculture         Education          Catholic  
+##          62.1013           -0.1546           -0.9803            0.1247  
 ## Infant.Mortality  
 ##           1.0784
 ```
@@ -376,150 +331,54 @@ swiss[,1:3]
 ```
 
 ```
-##              Fertility
-## Courtelary        80.2
-## Delemont          83.1
-## Franches-Mnt      92.5
-## Moutier           85.8
-## Neuveville        76.9
-## Porrentruy        76.1
-## Broye             83.8
-## Glane             92.4
-## Gruyere           82.4
-## Sarine            82.9
-## Veveyse           87.1
-## Aigle             64.1
-## Aubonne           66.9
-## Avenches          68.9
-## Cossonay          61.7
-## Echallens         68.3
-## Grandson          71.7
-## Lausanne          55.7
-## La Vallee         54.3
-## Lavaux            65.1
-## Morges            65.5
-## Moudon            65.0
-## Nyone             56.6
-## Orbe              57.4
-## Oron              72.5
-## Payerne           74.2
-## Paysd'enhaut      72.0
-## Rolle             60.5
-## Vevey             58.3
-## Yverdon           65.4
-## Conthey           75.5
-## Entremont         69.3
-## Herens            77.3
-## Martigwy          70.5
-## Monthey           79.4
-## St Maurice        65.0
-## Sierre            92.2
-## Sion              79.3
-## Boudry            70.4
-## La Chauxdfnd      65.7
-## Le Locle          72.7
-## Neuchatel         64.4
-## Val de Ruz        77.6
-## ValdeTravers      67.6
-## V. De Geneve      35.0
-## Rive Droite       44.7
-## Rive Gauche       42.8
-##              Agriculture
-## Courtelary          17.0
-## Delemont            45.1
-## Franches-Mnt        39.7
-## Moutier             36.5
-## Neuveville          43.5
-## Porrentruy          35.3
-## Broye               70.2
-## Glane               67.8
-## Gruyere             53.3
-## Sarine              45.2
-## Veveyse             64.5
-## Aigle               62.0
-## Aubonne             67.5
-## Avenches            60.7
-## Cossonay            69.3
-## Echallens           72.6
-## Grandson            34.0
-## Lausanne            19.4
-## La Vallee           15.2
-## Lavaux              73.0
-## Morges              59.8
-## Moudon              55.1
-## Nyone               50.9
-## Orbe                54.1
-## Oron                71.2
-## Payerne             58.1
-## Paysd'enhaut        63.5
-## Rolle               60.8
-## Vevey               26.8
-## Yverdon             49.5
-## Conthey             85.9
-## Entremont           84.9
-## Herens              89.7
-## Martigwy            78.2
-## Monthey             64.9
-## St Maurice          75.9
-## Sierre              84.6
-## Sion                63.1
-## Boudry              38.4
-## La Chauxdfnd         7.7
-## Le Locle            16.7
-## Neuchatel           17.6
-## Val de Ruz          37.6
-## ValdeTravers        18.7
-## V. De Geneve         1.2
-## Rive Droite         46.6
-## Rive Gauche         27.7
-##              Examination
-## Courtelary            15
-## Delemont               6
-## Franches-Mnt           5
-## Moutier               12
-## Neuveville            17
-## Porrentruy             9
-## Broye                 16
-## Glane                 14
-## Gruyere               12
-## Sarine                16
-## Veveyse               14
-## Aigle                 21
-## Aubonne               14
-## Avenches              19
-## Cossonay              22
-## Echallens             18
-## Grandson              17
-## Lausanne              26
-## La Vallee             31
-## Lavaux                19
-## Morges                22
-## Moudon                14
-## Nyone                 22
-## Orbe                  20
-## Oron                  12
-## Payerne               14
-## Paysd'enhaut           6
-## Rolle                 16
-## Vevey                 25
-## Yverdon               15
-## Conthey                3
-## Entremont              7
-## Herens                 5
-## Martigwy              12
-## Monthey                7
-## St Maurice             9
-## Sierre                 3
-## Sion                  13
-## Boudry                26
-## La Chauxdfnd          29
-## Le Locle              22
-## Neuchatel             35
-## Val de Ruz            15
-## ValdeTravers          25
-## V. De Geneve          37
-## Rive Droite           16
-## Rive Gauche           22
+##              Fertility Agriculture Examination
+## Courtelary        80.2        17.0          15
+## Delemont          83.1        45.1           6
+## Franches-Mnt      92.5        39.7           5
+## Moutier           85.8        36.5          12
+## Neuveville        76.9        43.5          17
+## Porrentruy        76.1        35.3           9
+## Broye             83.8        70.2          16
+## Glane             92.4        67.8          14
+## Gruyere           82.4        53.3          12
+## Sarine            82.9        45.2          16
+## Veveyse           87.1        64.5          14
+## Aigle             64.1        62.0          21
+## Aubonne           66.9        67.5          14
+## Avenches          68.9        60.7          19
+## Cossonay          61.7        69.3          22
+## Echallens         68.3        72.6          18
+## Grandson          71.7        34.0          17
+## Lausanne          55.7        19.4          26
+## La Vallee         54.3        15.2          31
+## Lavaux            65.1        73.0          19
+## Morges            65.5        59.8          22
+## Moudon            65.0        55.1          14
+## Nyone             56.6        50.9          22
+## Orbe              57.4        54.1          20
+## Oron              72.5        71.2          12
+## Payerne           74.2        58.1          14
+## Paysd'enhaut      72.0        63.5           6
+## Rolle             60.5        60.8          16
+## Vevey             58.3        26.8          25
+## Yverdon           65.4        49.5          15
+## Conthey           75.5        85.9           3
+## Entremont         69.3        84.9           7
+## Herens            77.3        89.7           5
+## Martigwy          70.5        78.2          12
+## Monthey           79.4        64.9           7
+## St Maurice        65.0        75.9           9
+## Sierre            92.2        84.6           3
+## Sion              79.3        63.1          13
+## Boudry            70.4        38.4          26
+## La Chauxdfnd      65.7         7.7          29
+## Le Locle          72.7        16.7          22
+## Neuchatel         64.4        17.6          35
+## Val de Ruz        77.6        37.6          15
+## ValdeTravers      67.6        18.7          25
+## V. De Geneve      35.0         1.2          37
+## Rive Droite       44.7        46.6          16
+## Rive Gauche       42.8        27.7          22
 ```
 ]]
 .pull-right[
@@ -531,150 +390,54 @@ swiss[,1:3]
 ```
 
 ```
-##              Fertility
-## Courtelary        80.2
-## Delemont          83.1
-## Franches-Mnt      92.5
-## Moutier           85.8
-## Neuveville        76.9
-## Porrentruy        76.1
-## Broye             83.8
-## Glane             92.4
-## Gruyere           82.4
-## Sarine            82.9
-## Veveyse           87.1
-## Aigle             64.1
-## Aubonne           66.9
-## Avenches          68.9
-## Cossonay          61.7
-## Echallens         68.3
-## Grandson          71.7
-## Lausanne          55.7
-## La Vallee         54.3
-## Lavaux            65.1
-## Morges            65.5
-## Moudon            65.0
-## Nyone             56.6
-## Orbe              57.4
-## Oron              72.5
-## Payerne           74.2
-## Paysd'enhaut      72.0
-## Rolle             60.5
-## Vevey             58.3
-## Yverdon           65.4
-## Conthey           75.5
-## Entremont         69.3
-## Herens            77.3
-## Martigwy          70.5
-## Monthey           79.4
-## St Maurice        65.0
-## Sierre            92.2
-## Sion              79.3
-## Boudry            70.4
-## La Chauxdfnd      65.7
-## Le Locle          72.7
-## Neuchatel         64.4
-## Val de Ruz        77.6
-## ValdeTravers      67.6
-## V. De Geneve      35.0
-## Rive Droite       44.7
-## Rive Gauche       42.8
-##              Agriculture
-## Courtelary          17.0
-## Delemont            45.1
-## Franches-Mnt        39.7
-## Moutier             36.5
-## Neuveville          43.5
-## Porrentruy          35.3
-## Broye               70.2
-## Glane               67.8
-## Gruyere             53.3
-## Sarine              45.2
-## Veveyse             64.5
-## Aigle               62.0
-## Aubonne             67.5
-## Avenches            60.7
-## Cossonay            69.3
-## Echallens           72.6
-## Grandson            34.0
-## Lausanne            19.4
-## La Vallee           15.2
-## Lavaux              73.0
-## Morges              59.8
-## Moudon              55.1
-## Nyone               50.9
-## Orbe                54.1
-## Oron                71.2
-## Payerne             58.1
-## Paysd'enhaut        63.5
-## Rolle               60.8
-## Vevey               26.8
-## Yverdon             49.5
-## Conthey             85.9
-## Entremont           84.9
-## Herens              89.7
-## Martigwy            78.2
-## Monthey             64.9
-## St Maurice          75.9
-## Sierre              84.6
-## Sion                63.1
-## Boudry              38.4
-## La Chauxdfnd         7.7
-## Le Locle            16.7
-## Neuchatel           17.6
-## Val de Ruz          37.6
-## ValdeTravers        18.7
-## V. De Geneve         1.2
-## Rive Droite         46.6
-## Rive Gauche         27.7
-##              Examination
-## Courtelary            15
-## Delemont               6
-## Franches-Mnt           5
-## Moutier               12
-## Neuveville            17
-## Porrentruy             9
-## Broye                 16
-## Glane                 14
-## Gruyere               12
-## Sarine                16
-## Veveyse               14
-## Aigle                 21
-## Aubonne               14
-## Avenches              19
-## Cossonay              22
-## Echallens             18
-## Grandson              17
-## Lausanne              26
-## La Vallee             31
-## Lavaux                19
-## Morges                22
-## Moudon                14
-## Nyone                 22
-## Orbe                  20
-## Oron                  12
-## Payerne               14
-## Paysd'enhaut           6
-## Rolle                 16
-## Vevey                 25
-## Yverdon               15
-## Conthey                3
-## Entremont              7
-## Herens                 5
-## Martigwy              12
-## Monthey                7
-## St Maurice             9
-## Sierre                 3
-## Sion                  13
-## Boudry                26
-## La Chauxdfnd          29
-## Le Locle              22
-## Neuchatel             35
-## Val de Ruz            15
-## ValdeTravers          25
-## V. De Geneve          37
-## Rive Droite           16
-## Rive Gauche           22
+##              Fertility Agriculture Examination
+## Courtelary        80.2        17.0          15
+## Delemont          83.1        45.1           6
+## Franches-Mnt      92.5        39.7           5
+## Moutier           85.8        36.5          12
+## Neuveville        76.9        43.5          17
+## Porrentruy        76.1        35.3           9
+## Broye             83.8        70.2          16
+## Glane             92.4        67.8          14
+## Gruyere           82.4        53.3          12
+## Sarine            82.9        45.2          16
+## Veveyse           87.1        64.5          14
+## Aigle             64.1        62.0          21
+## Aubonne           66.9        67.5          14
+## Avenches          68.9        60.7          19
+## Cossonay          61.7        69.3          22
+## Echallens         68.3        72.6          18
+## Grandson          71.7        34.0          17
+## Lausanne          55.7        19.4          26
+## La Vallee         54.3        15.2          31
+## Lavaux            65.1        73.0          19
+## Morges            65.5        59.8          22
+## Moudon            65.0        55.1          14
+## Nyone             56.6        50.9          22
+## Orbe              57.4        54.1          20
+## Oron              72.5        71.2          12
+## Payerne           74.2        58.1          14
+## Paysd'enhaut      72.0        63.5           6
+## Rolle             60.5        60.8          16
+## Vevey             58.3        26.8          25
+## Yverdon           65.4        49.5          15
+## Conthey           75.5        85.9           3
+## Entremont         69.3        84.9           7
+## Herens            77.3        89.7           5
+## Martigwy          70.5        78.2          12
+## Monthey           79.4        64.9           7
+## St Maurice        65.0        75.9           9
+## Sierre            92.2        84.6           3
+## Sion              79.3        63.1          13
+## Boudry            70.4        38.4          26
+## La Chauxdfnd      65.7         7.7          29
+## Le Locle          72.7        16.7          22
+## Neuchatel         64.4        17.6          35
+## Val de Ruz        77.6        37.6          15
+## ValdeTravers      67.6        18.7          25
+## V. De Geneve      35.0         1.2          37
+## Rive Droite       44.7        46.6          16
+## Rive Gauche       42.8        27.7          22
 ```
 ]]
 
@@ -793,6 +556,13 @@ background-position: 100% 0%
 
 ```r
 library("DT"); library("dplyr")
+```
+
+```
+## Warning: package 'dplyr' was built under R version 4.0.5
+```
+
+```r
 iris %&gt;% 
   DT::datatable(class = "compact", rownames = FALSE, extensions = "Buttons",
                 options = list(dom = 'tBp', buttons = c("csv","excel"), 
@@ -800,8 +570,8 @@ iris %&gt;%
   DT::formatRound(1:4, digits = 1) 
 ```
 
-<div id="htmlwidget-e3f5bc04a4c76e04bb09" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e3f5bc04a4c76e04bb09">{"x":{"filter":"none","extensions":["Buttons"],"data":[[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Sepal Length<\/th>\n      <th>Sepal Width<\/th>\n      <th>Petal Length<\/th>\n      <th>Petal Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"tBp","buttons":["csv","excel"],"pageLength":8,"columnDefs":[{"targets":0,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[0,1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render"],"jsHooks":[]}</script>
+<div id="htmlwidget-b4a7517cae8f6d2a7201" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b4a7517cae8f6d2a7201">{"x":{"filter":"none","extensions":["Buttons"],"data":[[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"tBp","buttons":["csv","excel"],"pageLength":8,"columnDefs":[{"targets":0,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[0,1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render"],"jsHooks":[]}</script>
 ]
 
 ---
@@ -1035,16 +805,16 @@ background-position: 100% 0%
 .white[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"&gt;&lt;/path&gt;&lt;/svg&gt; valentinaandrade@uchile.cl]
 &lt;/a&gt;
 
-&lt;a href="https://fabricadedatoslaborales.cl/"&gt;
-.white[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; https://fabricadedatoslaborales.cl]
+&lt;a href="https://valentinaandrade.netlify.app/"&gt;
+.white[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; https://valentinaandrade.netlify.app/]
 &lt;/a&gt;
 
 &lt;a href="https://github.com/valentinaandrade"&gt;
 .white[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @valentinaandrade]
 &lt;/a&gt;
 
-  &lt;a href="http://github.com/fabrica-datos-laborales"&gt;
-  .white[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @fabrica-datos-laborales]
+  &lt;a href="http://github.com/github.com/hbaraho/cuposBEA/"&gt;
+  .white[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @cuposBEA]
   &lt;/a&gt;
 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
@@ -1052,7 +822,7 @@ background-position: 100% 0%
 ]]
 
 .pull-left.white.middle[
-FONDECYT N°11190229&lt;br&gt;*Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada*]
+**Políticas de Inclusión en Educación Superior en Chile**&lt;br&gt;BEA y PACE]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
