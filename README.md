@@ -1,9 +1,8 @@
-# Fábrica de Datos Laborales xaringan
+# Slides xaringan
 
-Fábrica de Datos Laborales Theme theme for xaringan (remark.js)
+Theme theme for xaringan (remark.js)
 
-Example and guide here: http://fabrica-datos-laborales.github.io/fdl_xaringan
-
+Example and guide here: http:/valentinaandrade.github.io/slide1
 To get started you will likely need:
 
 ```
