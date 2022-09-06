@@ -41,32 +41,25 @@ top_icon = function(x) {
 }
 ```
 
-## Installing `r top_icon("download")`
+## Overview 
 
-The **xaringan** package is on CRAN, but I recommend installing the development release from `r icons::fontawesome("github")`
+--
 
-```{r, eval = FALSE}
-devtools::install_github('yihui/xaringan')
-remotes::install_github("rstudio/chromote")
-install.packages(c("progress", "jsonlite", "pdftools", "digest"))
-source("https://git.io/xaringan2pdf")
-```
+1. Estructura del proyecto
 
-.pull-left[
-You will also need two other CSS files for the custom University of Sydney styling:
+  - GSBPM
 
-- `fdl-fonts.css`
-- `sydney.css`
-]
-.pull-right[
-If you want the University Logo to show up on the title slide, you'll also need
+--
 
-- `USydLogo-black.svg`
-]
+2. Avances de trabajo 
 
-These are available in the assets folder of the GitHub code repository [`r icons::fontawesome("github")` `garthtarr/sydney_xaringan`](http://github.com/garthtarr/sydney_xaringan/assets)
+  - Información sobre las **AA**
+  - Estructurar datos
+  - Revisión de literatura
+  
+--
 
-To make things easy to get started, I recommend downloading a copy of the `sydney_xaringan` repo [`r icons::fontawesome("file-archive")`](https://github.com/garthtarr/sydney_xaringan/archive/master.zip) and make changes to the template. 
+3. Tareas para la próxima semana 
 
 ---
 background-image: url("assets/logo/logo.png")
@@ -578,6 +571,7 @@ background-position: 100% 0%
 <br><br><br>
 
 ]]
+`r top_icon("download")`
 
 .pull-left.white.middle[
 **Políticas de Inclusión en Educación Superior en Chile**<br>BEA y PACE]
