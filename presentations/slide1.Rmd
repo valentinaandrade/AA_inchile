@@ -53,6 +53,10 @@ pacman::p_load(tidyverse, rvest, kableExtra)
 #devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0") #para collapse rows
 ```
 
+```{r load, echo = FALSE}
+load("~/GitHub/ra/aapolicies_xaringan/presentations/output/offer.RData")
+```
+
 ## Overview 
 
 --
@@ -127,7 +131,7 @@ B. Policy Design proposal based on the research results
 ![](input/img/figure1.png)
 ---
 
-## A1. Design phase `r top_icon("github")`issue #7
+## A1. Design phase `r top_icon("github")`
 
 [`r icons::icon_style(icons::fontawesome("github"))` Issue #7](https://github.com/hbaraho/cuposBEA/issues/7)
 
@@ -200,18 +204,34 @@ data %>% select(-c(7,8)) %>%
 
 [`r icons::icon_style(icons::fontawesome("github"))` Issue #8](https://github.com/hbaraho/cuposBEA/issues/8)
 
+<br> 
 **Integrate data**
 
-1. Explore data
+*1. Admission offer data:* Explore data and descriptive statistics
 
-2. Descriptive statistics
+--
+
+- Problems with BEA vacancies
+
+--
+*2. Admission demand:* function map_df and long data to wide (MRUN- year as observation unit)
+
+---
+![](figures/explore/figure1.png)
+Figure 1. BEA vacancies distribution by year
+---
+
+![](figures/explore/figure2.png)
+Figure 2. Ratio BEA vacancies evolution by year
+
+
 ---
 
 ##  Information about **Affirmative Actions** in Chile
 
 [`r icons::icon_style(icons::fontawesome("github"))` AA Wiki](https://github.com/hbaraho/cuposBEA/wiki/Acciones-afirmativas-en-ESUP-en-Chile)
 
-<center>Table 3. AA summary <center>
+<center>Table 4. AA summary <center>
 
 | AA | Implementation year | Admission system                                                                        | Economic support | "Educational" support                  | Eligibility factors |   
 |----------|----------------------------|-------------------------------------------------------------------------------------------|------------------|---------------------------------| --------------------------------------------|
