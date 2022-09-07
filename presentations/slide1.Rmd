@@ -307,20 +307,6 @@ class: middle center
 3. PACE in SUA
 
 ---
-## Data tables `r top_icon("table")`
-
-.font80[
-```{r, message = FALSE, echo = F}
-library("DT"); library("dplyr")
-iris %>% 
-  DT::datatable(class = "compact", rownames = FALSE, extensions = "Buttons",
-                options = list(dom = 'tBp', buttons = c("csv","excel"), 
-                               pageLength = 8)) %>% 
-  DT::formatRound(1:4, digits = 1) 
-```
-]
-
----
 class: fdl-black
 background-image: url("assets/logo/logo-blanco.png")
 background-size: 15%
