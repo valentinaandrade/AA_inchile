@@ -2,7 +2,7 @@
 
 Theme theme for xaringan (remark.js)
 
-Example and guide here: http:/valentinaandrade.github.io/slide1
+Example and guide here: http:/valentinaandrade.github.io/AA_inchile/slide1
 To get started you will likely need:
 
 ```
