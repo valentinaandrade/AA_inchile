@@ -1,0 +1,136 @@
+---
+title: "1. Reporte descriptivo"
+author: "Asistente de investigación: Valentina Andrade"
+date: "`r format(Sys.Date(), '%d %B,%Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+source("requirements.R")
+```
+
+# Selectividad
+
+En el siguiente apartado se mostrarán algunos análisis descriptivos respecto a la distribución sociodemográfica de las carreras universitarias según selectividad. 
+
+A modo de facilitar el análisis se han destacado en colores aquellas carreras consideradas de "prestigio" en la sociedad chilena. 
+
+En la **Figura 1 y 2** se muestran todas las carreras ofrecidas en el sistema centralizado de admisión a la Educación Superior.
+
+![](../02_data/figures/explore/finals/figure001.png)
+**Figura 1.** Porcentaje de estudiantes pertenecientes del I a IV quintil.
+
+![](../02_data/figures/explore/finals/figure002.png)
+**Figura 2.** Porcentaje de estudiantes pertenecientes a establecimientos subvencionados y municipales
+
+En la **Figura 3 y 4** se muestran solamente aquellas carreras donde el número de postulaciones en primera preferencia excede a la cantidad de vacantes ofrecidas por la carrera. 
+
+![](../02_data/figures/explore/finals/figure003.png)
+**Figura 3.** Porcentaje de estudiantes pertenecientes del I a IV quintil.
+
+![](../02_data/figures/explore/finals/figure004.png)
+**Figura 4.** Porcentaje de estudiantes pertenecientes a establecimientos subvencionados y municipales
+
+
+# Caracterización sobre BEA
+
+## A nivel agregado
+
+En la **Figura 5** se puede ver la distribución del número de estudiantes BEA por carrera (la unidad de observación son las carreras). La **Figura 6** es similar, solo que se calcula el porcentaje de los BEA respecto de los seleccionados totales.
+
+![](../02_data/figures/explore/finals/figure005.png)
+
+![](../02_data/figures/explore/finals/figure006.png)
+
+Mientras que en la **Figura 7** vemos la evolución de las vacantes BEA respecto de las vacantes totales, solo para aquellas carreras en donde tenemos información para toda la serie. 
+
+![](../02_data/figures/explore/finals/figure007.png)
+
+
+La **Figura 8** muestra la composición de ingreso de las carreras, segmentada en si hay menos o más estudiantes BEA que vacantes ofrecidas BEA. Si bien no tenemos información de quiénes de los seleccionados que son BEA, efectivamente son BEA sí podemos ver en la figura de la derecha carreras donde existiría *subutilización* de los cupos. 
+
+![](../02_data/figures/explore/finals/figure008.png)
+
+La **Figura 9** repite el análisis pero ahora la variable de interés es el porcentaje de estudiantes que pertenecen a establecimientos subvencionados y municipales.
+
+![](../02_data/figures/explore/finals/figure009.png)
+
+| Utilización | n |
+|---|---|
+| Más BEA que vacantes | 1351 |
+| Menos BEA que vacantes | 130 |
+
+**Tabla 1**. Utilización para toda población postulante
+
+| Utilización | n |
+|---|---|
+| Más BEA que vacantes | 446 |
+| Menos BEA que vacantes | 316 |
+
+**Tabla 2.** Utilización para solo los seleccionados en primera prioridad
+
+
+
+|sigla_universidad | Más BEA que vacantes| Menos BEA que vacantes|
+|:-----------------|--------------------:|----------------------:|
+|PUCV              |                   21|                      5|
+|UACH              |                   35|                      4|
+|UAH               |                    1|                      5|
+|UANT              |                    9|                      7|
+|UAYSE             |                    1|                      2|
+|UBB               |                   21|                      4|
+|UC                |                   19|                     18|
+|UCH               |                   24|                     22|
+|UCM               |                   10|                      6|
+|UCN               |                   12|                      7|
+|UCSC              |                    8|                      6|
+|UCSH              |                   14|                      5|
+|UCT               |                   13|                     12|
+|UDA               |                    3|                      8|
+|UDEC              |                   49|                     10|
+|UDP               |                    9|                     13|
+|UFRO              |                   20|                      5|
+|UFT               |                    3|                      4|
+|ULAG              |                    5|                      6|
+|ULS               |                   16|                     15|
+|UMAG              |                    4|                     12|
+|UMAYO             |                   10|                      7|
+|UNAB              |                   19|                     10|
+|UNAP              |                    9|                     12|
+|UOH               |                    2|                      4|
+|UPA               |                    5|                     19|
+|USACH             |                   33|                     12|
+|UTA               |                    8|                     12|
+|UTAL              |                   17|                     10|
+|UTEM              |                    2|                      5|
+|UTFSM             |                   25|                      4|
+|UV                |                   19|                      7|
+|UAI               |                    0|                      6|
+|UANDE             |                    0|                     12|
+|UDD               |                    0|                      8|
+|UMCE              |                    0|                     12|
+
+**Tabla 3**. Utilización según universidad
+
+
+
+
+
+
+## A nivel desagregado
+
+Se abordará si existe algún patrón de postulación en primera preferencia de los estudiantes BEA por ciertas instituciones. La **Figura 10** aborda este objetivo, en la medida en que muestra la composición de los estudiantes, condicional a la universidad que postularon en la primera opción.
+![](../02_data/figures/explore/bea/figure010.png)
+
+La **Figura 11** es una forma más parsimoniosa de ver este análisis. Solo considerando a los estudiantes BEA. 
+![](../02_data/figures/explore/bea/figure011.png)
+
+Mientras que la **Figura 12** aporta información adicional. Nos dice cuántos de esos estudiantes BEA que postularon en primera opción a determinada universidad, queda seleccionado o no. 
+
+![](../02_data/figures/explore/bea/figure012.png)

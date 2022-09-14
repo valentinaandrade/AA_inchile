@@ -63,8 +63,9 @@ load("~/GitHub/ra/aapolicies_xaringan/presentations/output/offer.RData")
 
 1. Progress
 
-  - Especificar requerimiento de datos
-  - Análisis descriptivo
+  - Especificar requerimiento sobre datos datos
+  - Análisis descriptivo para propuesta
+  - Análisis descriptivo BEA's
 
 --
 
@@ -91,6 +92,7 @@ class: middle center
 ![](figures/explore/finals/figure005.png)
 ---
 ![](figures/explore/finals/figure006.png)
+
 ---
 ![](figures/explore/finals/figure007.png)
 ---
