@@ -1,6 +1,8 @@
-# Slides xaringan
+# Page cupos BEA project
 
-Theme theme for xaringan (remark.js)
+## Slides xaringan
+
+Theme for xaringan (remark.js)
 
 Example and guide here: http:/valentinaandrade.github.io/AA_inchile/slide1
 To get started you will likely need:
