@@ -1,0 +1,173 @@
+---
+title: "Politicas de Inclusión en Educación Superior en Chile"
+subtitle: "Beca de Excelencia Académica y Programa de Acceso Educación Superior"
+author:
+  - 'Research Assistant: Valentina Andrade'
+date: "`r format(Sys.Date(), '%d %B,%Y')`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/fdl-fonts.css", "assets/fdl.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE, warning=F}
+library(readxl)
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           cite.style = 'authoryear', 
+           style = "markdown",
+           hyperlink = FALSE, 
+           dashed = FALSE)
+myBib <- ReadBib("assets/example.bib", check = FALSE)
+top_icon = function(x) {
+  icons::icon_style(
+    icons::fontawesome(x),
+    position = "fixed", top = 10, right = 10
+  )
+}
+
+knitr::opts_chunk$set(comment=NA, prompt=FALSE, cache=FALSE, echo=TRUE, results='asis', message = F, warning = F)
+#Kable opts
+kable <- function(data) {
+  knitr::kable(data, booktabs = TRUE, digits = 2) %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options =c("striped", "scale_down"),  full_width = T)
+}
+options(knitr.kable.NA = ' ', kableExtra.auto_format = FALSE)
+pacman::p_load(tidyverse, rvest, kableExtra)
+
+#devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0") #para collapse rows
+```
+
+```{r load, echo = FALSE}
+load("~/GitHub/ra/aapolicies_xaringan/presentations/output/offer.RData")
+```
+
+## Overview 
+
+--
+
+1. Progress
+
+  - Especificar requerimiento de datos
+  - Análisis descripti
+
+--
+
+2. *TO-DO* next week
+
+
+
+---
+class: middle center 
+
+## **1. Progress 🚀**
+
+---
+
+![](figures/explore/finals/figure001.png)
+---
+![](figures/explore/finals/figure002.png)
+
+---
+![](figures/explore/finals/figure003.png)
+---
+![](figures/explore/finals/figure004.png)
+---
+![](figures/explore/finals/figure005.png)
+---
+![](figures/explore/finals/figure006.png)
+---
+![](figures/explore/finals/figure007.png)
+---
+![](figures/explore/finals/figure009.png)
+---
+![](figures/explore/bea/figure010.png)
+---
+![](figures/explore/bea/figure011.png)
+---
+![](figures/explore/bea/figure012.png)
+---
+## Literature review
+
+.blockquote[
+### `r icons::fontawesome("comment-dots")` Eficency hypothesis
+
+- Access to alternative high private schools: displaced individuals have to access to alternative high quality colleges 
+
+]
+
+.pull-right[
+
+.small[
+]
+.blockquote[
+### `r icons::fontawesome("question")` Questions
+- Evolución de universidaes privadas en Chile
+- Distinción entre universidades públicas, tradicionales, CRUCH, G9 para capturar calidad y competividad
+
+]
+
+]
+---
+class: middle center
+
+## **3. Preguntas y *TO-DO list***
+
+---
+## Questions 
+
+- Efecto grupo (paper Agarwal and Somaini (2020))
+
+--
+
+- Bias en postulaciones de los BEA y PACE
+
+--
+
+---
+class: fdl-black
+background-image: url("assets/logo/logo-blanco.png")
+background-size: 15%
+background-position: 100% 0%
+
+# ¡Gracias!
+
+.pull-right[.pull-down[
+
+<a href="mailto:valentinaandrade@uchile.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` valentinaandrade@uchile.cl]
+</a>
+
+<a href="https://valentinaandrade.netlify.app/">
+.white[`r icons::icon_style(icons::fontawesome("link"), fill = "white")` https://valentinaandrade.netlify.app/]
+</a>
+
+<a href="https://github.com/valentinaandrade">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @valentinaandrade]
+</a>
+
+  <a href="http://github.com/github.com/hbaraho/cuposBEA/">
+  .white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @cuposBEA]
+  </a>
+
+<br><br><br>
+
+]]
+
+.pull-left.white.middle[
+**Políticas de Inclusión en Educación Superior en Chile** - BEA y PACE]
