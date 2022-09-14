@@ -64,7 +64,7 @@ load("~/GitHub/ra/aapolicies_xaringan/presentations/output/offer.RData")
 1. Progress
 
   - Especificar requerimiento de datos
-  - Análisis descripti
+  - Análisis descriptivo
 
 --
 
@@ -107,7 +107,7 @@ class: middle center
 .blockquote[
 ### `r icons::fontawesome("comment-dots")` Eficency hypothesis
 
-- Access to alternative high private schools: displaced individuals have to access to alternative high quality colleges 
+- Acceso a universidades privadas: individuos desplazados por cuotas tienen acceso a instituciones de alta calidad.
 
 ]
 
