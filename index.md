@@ -6,8 +6,8 @@ All the codes, issues, and functions created can be downloaded from the [followi
 
 # Presentations
 
-- [Slide 1](https://valentinaandrade.github.io/AA_inchile/presentations/slide1.html#1)
-- [Slide 2](https://valentinaandrade.github.io/AA_inchile/presentations/slide1.html#2)
+- [Slide 1 - 7 september](https://valentinaandrade.github.io/AA_inchile/presentations/slide1.html#1)
+- [Slide 2 - 14 september](https://valentinaandrade.github.io/AA_inchile/presentations/slide2.html#1)
 
 # Reports
 
