@@ -12,6 +12,6 @@ All the codes, issues, and functions created can be downloaded from the [followi
 # Reports
 
 - [Report 1](https://valentinaandrade.github.io/AA_inchile/reports/01report.html)
-
+- [Report 2](https://valentinaandrade.github.io/AA_inchile/reports/02report.html)
 
 
