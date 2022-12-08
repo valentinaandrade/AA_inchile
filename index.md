@@ -18,3 +18,4 @@ All the codes, issues, and functions created can be downloaded from the [followi
 - [Report 4/update 02-11/2022](https://valentinaandrade.github.io/AA_inchile/reports/04report-correciones.html)
 - [Report 4 mini](https://valentinaandrade.github.io/AA_inchile/reports/04report-mini.html)
 - [Report 5](https://valentinaandrade.github.io/AA_inchile/reports/05report.html)
+- [Report 6](https://valentinaandrade.github.io/AA_inchile/reports/06report.html)
