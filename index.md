@@ -29,4 +29,4 @@ All the codes, issues, and functions created can be downloaded from the [followi
 
 ## Simulations
 
-- [Semana 1 - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/04report.html)
+- [Semana 1 - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/08report.html)
