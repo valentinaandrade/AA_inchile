@@ -27,6 +27,5 @@ All the codes, issues, and functions created can be downloaded from the [followi
 
 # Visitas
 
-## Simulations
 
 - [Semana 1 - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/08report.html)
