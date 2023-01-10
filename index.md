@@ -23,3 +23,10 @@ All the codes, issues, and functions created can be downloaded from the [followi
 - [Report 5](https://valentinaandrade.github.io/AA_inchile/reports/05report.html)
 - [Report 6](https://valentinaandrade.github.io/AA_inchile/reports/06report.html)
 - [Report 7](https://valentinaandrade.github.io/AA_inchile/reports/07report.html)
+
+
+# Visitas
+
+## Simulations
+
+- [Semana 1 - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/04report.html)
