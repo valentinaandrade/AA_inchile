@@ -25,7 +25,8 @@ All the codes, issues, and functions created can be downloaded from the [followi
 - [Report 7](https://valentinaandrade.github.io/AA_inchile/reports/07report.html)
 
 
-# Visitas
-
+# Visitas SIES-MINEDUC
 
 - [Semana 1 - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/08report.html)
+
+
