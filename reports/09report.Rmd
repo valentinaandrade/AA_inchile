@@ -1,0 +1,153 @@
+---
+title: "9. Reporte avance académico"
+author: "Asistente de investigación: Valentina Andrade"
+date: "última actualización: `r format(Sys.Date(), '%d %B,%Y')`"
+output:
+  html_document:
+    theme: journal
+    number_section: yes
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE, echo = F, message= F, warning= F}
+knitr::opts_chunk$set(comment=NA, prompt=FALSE, cache=FALSE, echo=TRUE, results='asis', message = F, warning = F,
+ fig.width = 10,
+ fig.asp = 0.8,
+ out.width = "100%")
+# Source data
+#source("01_code/requirements.R")
+
+```
+
+# Descripción del reporte
+
+El siguiente reporte muestra un avance del análisis construído en base a los outcomes de avance académico que se definieron como equipo. Sea $i = \lbrace 1,2 \rbrace$ donde $i$ indica el año académico del estudiante, entonces definimos como 
+
+- `dropout_{i}`: una variable que indica $1$ si el estudiante no aparece matriculado al año siguiente y $0$ si aparece matriculado al año siguiente, independiente de la carrera indicada. Se construye una medida para el sistema centralizado y para todo el sistema (con sufijo `_all` )
+
+- `switch_{i}`: una variable que indica $1$ si el estudiante aparece en otra carrera que la de origen al año siguiente y $0$ si se mantiene. Se construye una medida para el sistema centralizado y para todo el sistema (con sufijo `_all` )
+
+- `enroll_{i}`: una variable que indica $1$ si el estudiante aparece matriculado al año siguiente y $0$ si no aparece matriculado al año siguiente, independiente de la carrera indicada. Se construye una medida para el sistema centralizado y para todo el sistema (con sufijo `_all` )
+
+- `dropout`: una variable que indica $1$ si el estudiante tiene todos los `dropout_{i} == 1`, en caso contrario es $0$
+
+- `stopout`: una variable que indica $1$ si `dropout_{1} == 1` y algún `dropout_{i} == 0` para un $i \neq 1$.
+
+Las figuras presentadas son una selección. Por ejemplo, para los análisis relacionales solo se utilizó el año 2021 debido que para este año y el 2022 se tiene información fidedigna de quiénes son elegibles PACE. De todas formas este mismo análisis se extendió desde el año 2007 al 2017, segmentado por estudiantes *bea* y *regulares*. Para ver estos y más figuras pueden ir a [**04_analysis/figures**](https://www.dropbox.com/scl/fo/qisogslz0umpwrt3418b0/h?dl=0&rlkey=0p3jubt3te45ymt4ym7v2e7ou)
+
+
+# ¿Cómo son las tendencias de los outcomes académicos?
+
+Sin considerar lo ocurrido después de la pandemia, el porcentaje de salidas del sistema universiario se mantiene estable, pero con diferencias entre los elegibles bea y aquellos que no lo son. Tanto para las salidas del sistema al primer, segundo y todos los años, los elegibles BEA tienen dos veces el porcentaje de *dropout* que los estudiantes regulares (*Figura 1*). Ahora bien, el escenario de análisis cambia cuando consideramos a los estudiantes que están fuera del sistema centralizado: los estudiantes BEA tienen más permanencia en el sistema que los regulares, probablemente porque los regulares que están fuera del SUA aumentan mucho la deserción y los BEA tienen principalmente participación en el sistema centralizado. Una historia posible al aumento del dropout de segundo año puede ser por la carreras fuera del sistema que tienen duración formal más corta. 
+
+
+![](https://www.dropbox.com/s/cvo8lbntvq0u4qo/fig_dropout.png?raw=1)
+
+**Figura 1.**
+
+![](https://www.dropbox.com/s/9y87vxmqpa9ahrd/fig_dropout_all.png?raw=1)
+
+**Figura 2.**
+
+La tendencia sobre el porcentaje de *switch* es similar tanto para el sistema centralizado como el sistema total, por ello se presenta solo la del SUA (*figura 3*). En orden de nivel, el porcentaje *switch* de carrera es mucho mayor que el porcentaje de deserción, por lo que sería interesante explorar hacia qué tipo de carreras es el flujo de cambio. 
+
+En términos de tendencia, es relativamente estable a excepción de los cambios del año 2011 a 2012. Queda pendiente explorar si este switch se dió de universidades públicas o carreras que estuvieron en paralización por el movimiento estudiantil hacia universidades o carreras no movilizadas. Destaca que este cambio es mucho mayor en *BEA* que en los regulares. 
+
+![](https://www.dropbox.com/s/3z6l5nbai0wdazh/fig_switch.png?raw=1)
+
+**Figura 3.**
+
+La tendencia de *stopout* diferenciada entre SUA y no SUA es bastante extraña. En la *figura 4* de la derecha, el *stopout* presenta una tendencia ascendente para ambos grupos, y con una pequeña caida para el año 2017. En ese sentido, en el SUA ha aumentado el porcentaje de estudiantes que retorna al sistema, mientras que en el caso del sistema general el escenario es totalmente distinto. La figura de la izquiersa muestra notoriamente una caida del *stopout* desde un 3.5% a un 1.5%. Lo que si es consistente en ambas gráficas es que los *BEA* tienen más porcentaje de retornos al sistema que los *regulares*. 
+
+
+![](https://www.dropbox.com/s/pom87beabg68t4u/fig_stopout.png?raw=1)
+
+**Figura 4**.
+
+
+# ¿Cómo es la relación del desempeño universitario con el desempeño en las pruebas de admisión?
+
+Para analizar esto tomamos dos medidas de desempeño en las pruebas de admisión: puntaje ponderado en la carrera en que el estudiante fue seleccionado y puntaje promedio en la prueba de matemáticas y lenguaje.
+
+- Los beneficios de la primera es que nos permite "controlar" por las habilidades diferenciadas que tienen los estudiantes según el área de estudio (es decir, si se accede a una carrera de ingenería, la ponderación de matemáticas es mayor también siendo más relevante estas habilidades para aprobar los cursos).
+
+- Mientras que la segunda nos permite rescatar a los estudiantes que no fueron seleccionados por el SUA, junto con ser una única medida homogéna para todos los estudiantes.
+
+Ahora bien, como veremos en la *figura 5 y 6* los resultados son muy similares. 
+
+## puntaje ponderado carrera seleccionada
+
+![](https://www.dropbox.com/s/n9ft8j2lfzi31xr/fig1_2021_all.png?raw=1)
+
+**Figura 5A.** 
+
+A pesar de que las series muestran que los habilitados BEA tienen un mayor dropout que los estudiantes que solo pueden acceder por vía regular, la **figura 5** nos muestra que esta diferencia desaparece para estudiantes con puntaje ponderado mayor. Respecto a los PACE hay tres puntos interesantes
+
+1. los PACE presentan un mayor dropout antes de los 600 puntos ponderados, pero sobre los 600 puntos su dropout es similar al de los estudiantes regulares y BEA.
+
+2. En nivel, parece ser que los BEA tienen menor dropout que los PACE. A primera vista eso sorprende dado que sabemos que los PACE reciben **acompañamiento** y los BEA no. Sin embargo, se debe recordar que el universo de PACE está seleccionado por un criterio de vulnerabilidad más fuerte que el de BEA, por lo que ello puede tener consecuencias en el desempeño de primer año. 
+
+3. Es interesante notar que la sensibilidad del dropout a los puntajes es más fuerte en PACE que en los otros estudiantes.
+
+El análisis es análogo con *enroll_1*, figura que muestra que la relación entre puntajes y la probabilidad de mantenerse al año siguiente es igual para los tres grupos. 
+
+A su vez, en el caso de los cambios de carrera al primer año, el *switch* de *BEA y PACE* es mucho más sensible a los puntajes ponderados. A mayor promedio ponderado, menor es la probabilidad de cambiarse. En nivel, esta probabilidad es relativamente más baja en PACE que en el resto de los grupos (probablemente debido a las restricciones de utilización de las cuotas solo para el primer año). 
+
+![](https://www.dropbox.com/s/5rqpnezlx1m56ba/fig1_2021.png?raw=1)
+
+**Figura 5B.**
+
+## promedio puntaje matemáticas y lenguaje
+
+![](https://www.dropbox.com/s/xc208ct48kjk0f9/fig1_2021.png?raw=1)
+
+**Figura 6.**
+
+En el caso de la *figura 6* los resultados son similares. Solo que probablemente el punto (2) sobre la *figura 5* sea más claro. Otra diferencia pero que no es nuy sustancial es la censura de la variable enroll_1 sobre los 450 puntos (esto debido a que es condición mínima para postular en el SUA, excepto para PACE)
+
+
+# ¿Cómo es la relación del desempeño universitario con el nivel socioeconómico?
+
+A partir de la figura *5 y 6*, apropósito de la idea del sesgo de selección que hay en los elegibles PACE (mayor vulnerabilidad que los BEA), se utiliza como proxy *ingreso per cápita*. Un ejercicio futuro sería ver este análisis según IVU del establecimiento. 
+
+## ingreso per capita
+
+Primero, como muestra la *figura 7* la distribución de ingresos es relativamente similar entre BEA, PACE y regular. Solo PACE muestra mayor densidad en ingreso per cápita más bajos. 
+
+![](https://www.dropbox.com/s/kng2w4fap1ttz2w/fig_descriptive.png?raw=1)
+
+**Figura 7.**
+
+Más interesante es el resultado del *dropout* (tanto para SUA como no SUA): independiente del ingreso per cápita, el porcentaje de dropout es mayor en PACE que en resto de los grupos, y el menor de todos los porcentajes es el de BEA. 
+
+Mientras que el *switch* en el sistema general muestra una relación distinta de regulares vs BEA/PACE. A mayor ingreso, el porcentaje de cambio de los regulares aumenta. Mientras que en el caso de BEA disminuye y en el caso de PACE es más constante. Es decir, existiría una relación positiva y negativa entre el ingreso per capita y el porcentaje de cambio para regular y BEA, respectivamente. 
+
+
+
+![](https://www.dropbox.com/s/8bn7objhko6w66y/fig1_2021.png?raw=1)
+
+**Figura 8.**
+
+![](https://www.dropbox.com/s/jeglar32a467wip/fig1_2021_all.png?raw=1)
+
+**Figura 9.**
+
+
+
+## ¿Hay heterogeneidad de los resultados académicos según área de conocimiento?
+
+Si analizamos el **dropout** según *ptje_ponderado*, *promedio lenguaje y matemáticas* e *ingreso per cápita*, la verdad es que **no**. Solo muestra una relación distinta entre áreas de conocimiento el cambio de carrera o **switch** según promedio mate y lenguaje. 
+
+
+
+![](https://www.dropbox.com/s/hk074kqn3fuvcxa/figswitch1_2021.png?raw=1)
+
+
+
+![](https://www.dropbox.com/s/a3kio0pbrqzwih2/figswitch2_2021.png?raw=1)
+
+**Figura 10.**
+
