@@ -30,6 +30,9 @@ All the codes, issues, and functions created can be downloaded from the [followi
 - [Enero - Report 8](https://valentinaandrade.github.io/AA_inchile/reports/08report.html)
 
 
-- [Febrero - Report 9](https://valentinaandrade.github.io/AA_inchile/reports/09report.html)
+- [Febrero 1 - Report 9](https://valentinaandrade.github.io/AA_inchile/reports/09report.html)
+
+
+- [Febrero 2 - Report 10](https://valentinaandrade.github.io/AA_inchile/reports/10report.html)
 
 
